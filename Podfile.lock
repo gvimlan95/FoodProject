@@ -1,0 +1,22 @@
+PODS:
+  - Bolts (1.2.0):
+    - Bolts/AppLinks (= 1.2.0)
+    - Bolts/Tasks (= 1.2.0)
+  - Bolts/AppLinks (1.2.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.2.0)
+  - Bond (4.0.0-alpha.2)
+  - Parse (1.8.1):
+    - Bolts/Tasks (>= 1.2.0)
+
+DEPENDENCIES:
+  - Bolts (~> 1.2)
+  - Bond (~> 4.0.0-alpha.2)
+  - Parse (~> 1.8)
+
+SPEC CHECKSUMS:
+  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  Bond: ce21ddc3735995da2b9dac8661f862192ac9c655
+  Parse: 2155953b1565494095d5fa5c83b3c77f2c677c09
+
+COCOAPODS: 0.38.2

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.setApplicationId("eNMFAhUvDKJQPav4svU55BIjqf0rl2udkXeHReYZ",
+            clientKey: "KRie9n3PMQzKyV3uVHU701giZxtCYWXxgbJKofFR")
+        
+        PFUser.logInWithUsername("test", password: "test")
+        
+        if PFUser.currentUser() != nil{
+            print("Logged in successfully")
+        }else{
+            print("No logged in user")
+        }
+        
+        let acl = PFACL()
+        acl.setPublicReadAccess(true)
+        PFACL.setDefaultACL(acl, withAccessForCurrentUser: true)
+        
+        
         return true
     }
 

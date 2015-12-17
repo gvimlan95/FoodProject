@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PhotoViewViewController.swift
 //  FoodProject
 //
 //  Created by VIMLAN.G on 8/22/15.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PhotoViewViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +24,3 @@ class ViewController: UIViewController {
 
 
 }
-
